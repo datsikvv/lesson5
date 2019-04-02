@@ -22,18 +22,40 @@ div nav {
 	position: absolute;
     left: 50%;
     margin-left: -270px;
-    top: 38px;
+    top: 25px;
 }
 div nav ul li	{
 	float: left;
 	list-style: none;
-	margin: 0px 10px;
+	margin: 10px 10px;
+
 }
 div nav ul li a {
 	color: #f00;
 	text-decoration: none;
 	font-size: 20px;
 }
+div nav ul li ul {
+	display: none;
+    background-color: black;
+    min-width: 130px;
+    position: absolute;
+    z-index: 99999;
+    top:38px;
+    border-radius: 5px;
+    }
+div nav ul li:hover ul {
+	display: block;
+}
+div nav ul li ul li {
+	float: none;
+	text-align: center;
+	
+}
+div nav ul li ul li a {
+	padding: 0px;
+}
+
 a:hover {
     background: #000;
     color: #fff;  
@@ -182,25 +204,4 @@ footer span {
 	color: #fff;
 	top: 80px;
 	right: 10px;
-}
-div nav ul li ul {
-	display: none;
-    background-color: black;
-    min-width: 130px;
-    position: absolute;
-    z-index: 99999;
-    top:28px;
-    border-radius: 5px;
-    }
-div nav ul li:hover ul {
-	display: block;
-}
-div nav ul li ul li {
-	float: none;
-	text-align: center;
-	
-}
-div nav ul li ul li a {
-	padding: 0px;
-	margin: 10px;
 }
